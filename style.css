@@ -782,7 +782,6 @@ header #countdown {
 }
 
 #button-connexion > a {
-	margin: 39px auto 0;
 	width: fit-content;
 	display: block;
 	text-align: center;
@@ -791,6 +790,8 @@ header #countdown {
 	color: #000000;
 	text-transform: uppercase;
 	opacity: 1;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 #nav-wrap-menu > .flags {
@@ -5459,6 +5460,28 @@ section {
 
 h1, h2 {
 	font-weight: normal;
+}
+
+@media screen and (max-width: 1320px) {
+
+	h1 {
+		font-size: 55px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+
+	.top-title {
+		font-size: 25px;
+	}
+
+	#button-connexion {
+		font-size: 10px;
+	}
+
+	.flags {
+		margin-right: 10px;
+	}
 }
 
 a:hover {
