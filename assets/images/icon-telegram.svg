@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Groupe_111" data-name="Groupe 111" transform="translate(-0.138)">
+    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(0.138)" fill="none" stroke="#fe00c2" stroke-width="2">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14" fill="none"/>
+    </g>
+    <path id="Icon_awesome-telegram-plane" data-name="Icon awesome-telegram-plane" d="M13.574,5.567,11.52,15.254c-.155.684-.559.854-1.133.532l-3.13-2.306-1.51,1.452a.786.786,0,0,1-.629.307l.225-3.187,5.8-5.241c.252-.225-.055-.349-.392-.125L3.58,11.2.493,10.234c-.672-.21-.684-.672.14-.994L12.708,4.589C13.267,4.379,13.756,4.713,13.574,5.567Z" transform="translate(7.602 5.019)" fill="#fff"/>
+  </g>
+</svg>

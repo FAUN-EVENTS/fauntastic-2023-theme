@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "StreetPunk";
+    src: url('../fonts/StreetPunkMarker/StreetPunksMarkerRegular.ttf');
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Open Sans Semicondensed";
+    src: url('../fonts/OpenSans_SemiCondensed/OpenSans_SemiCondensed-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Semicondensed";
+    src: url("../fonts/OpenSans_SemiCondensed/OpenSans_SemiCondensed-Bold.ttf");
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "Open Sans Condensed";
+    src: url('../fonts/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Condensed";
+    src: url("../fonts/OpenSans_Condensed/OpenSans_Condensed-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url('../fonts/Outfit/Outfit-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/Outfit/Outfit-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url('../fonts/Quicksand/Quicksand-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand/Quicksand-Bold.ttf");
+    font-weight: bold;
+}
