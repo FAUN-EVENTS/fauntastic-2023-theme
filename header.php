@@ -34,11 +34,12 @@
                 <a href="/en/<?= $slug; ?>"><p>🇬🇧</p></a>
 				<a href="/fr/<?= $slug; ?>"><p>🇫🇷</p></a>
 			</div>
-            <!-- Coming soon ;)
+
+            <?php if(fauntastic_get_registration_state() === FauntasticRegState::OPEN): ?>
 			<div id="button-connexion">
-				<a href="#">connexion</a>
+                <a href="#"><?= is_lang_en() ? "Register/Login" : "Inscription/Connexion" ?></a>
 			</div>
-			-->
+            <?php endif; ?>
 		</div>
 	</div>
 	

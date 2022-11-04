@@ -1,5 +1,13 @@
 <?php
 
+    abstract class FauntasticRegState {
+        const CLOSED = "REGISTRATION_CLOSED";
+        const SOON = "REGISTRATION_OPEN_SOON";
+        const OPEN = "REGISTRATION_OPEN";
+    }
+    // Set default state
+    $fauntastic_registration_state = null;
+
     function fauntastic_last_posts(){ 
         $recentPosts = new WP_Query();
         $recentPosts->query('showposts=3');
@@ -33,11 +41,18 @@
         endwhile;
     };
 
-    if(!function_exists("fauntastic_get_registration_banner"))
+    if(!function_exists("fauntastic_get_registration_state"))
     {
-        function fauntastic_get_registration_banner(): string
+        function fauntastic_get_registration_state(): string
         {
-            $api_endpoint = "https://registration.fauntastic.eu/rest/register";
+            global $fauntastic_registration_state;
+
+            if(isset($fauntastic_registration_state) && is_string($fauntastic_registration_state))
+            {
+                return $fauntastic_registration_state;
+            }
+
+            $api_endpoint = "https://dev.registration.fauntastic.eu/rest/register";
             $ch = curl_init($api_endpoint);
 
             curl_setopt_array($ch, [
@@ -51,22 +66,41 @@
                 $data = ["_embedded" => ["state" => "REGISTRATION_NOT_STARTED"]];
             }
             curl_close($ch);
-
             // Get image name considering the returned state from the API
             switch($data["_embedded"]["state"])
             {
                 case "REGISTRATION_IS_OPEN":
-                    $img_name = "registration_open.png";
+                    $fauntastic_registration_state = FauntasticRegState::OPEN;
                     break;
                 case "REGISTRATION_IS_OVER":
                 case "REGISTRATION_IS_DONE":
+                    $fauntastic_registration_state = FauntasticRegState::CLOSED;
+                    break;
+                default:
+                    $fauntastic_registration_state = FauntasticRegState::SOON;
+                    break;
+            }
+            return $fauntastic_registration_state;
+        }
+    }
+
+    if(!function_exists("fauntastic_get_registration_banner"))
+    {
+        function fauntastic_get_registration_banner(): string
+        {
+            $state = fauntastic_get_registration_state();
+            switch($state)
+            {
+                case FauntasticRegState::OPEN:
+                    $img_name = "registration_open.png";
+                    break;
+                case FauntasticRegState::CLOSED:
                     $img_name = "registration_closed.png";
                     break;
                 default:
                     $img_name = "registration_open_soon.png";
                     break;
             }
-
             // Build and return image path
             return get_template_directory_uri() . "/assets/images/registration" . "/" . (is_lang_en() ? "en" : "fr") . "/" . $img_name;
         }
