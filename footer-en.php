@@ -7,7 +7,8 @@
 					<h5>About Fauntastic</h5>
 					<hr>
 					<p>Fauntastic 2023 - Wild in the Street, is the third edition of your friendly Lyon-based furry convention. We focus on friendship, sharing, creativity and fun. Values that our community can be proud of. You don't have to be a furry to join us! </p>
-					<a href="/en/cookie-policy-eu" class="hover-blue">Cookies Policy</a><br />
+                    <a href="/en/code-de-conduite">Conduct Code</a>
+                    <a href="/en/cookie-policy-eu" class="hover-blue">Cookies Policy</a><br />
                     <a href="/en/a-propos" class="hover-blue">About us...</a>
 				</article>
 				<article class="contact-w">
