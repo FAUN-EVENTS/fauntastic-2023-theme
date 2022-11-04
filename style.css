@@ -5576,7 +5576,7 @@ nav#main-nav > ul > li, nav#main-nav > ul > li > ul > li {
 	padding-bottom: 10px;
 }
 
-ul.list-body>li {
+body>section li {
 	font-family: 'Outfit', serif;
 	font-size: 18px;
 	font-weight: 300;
