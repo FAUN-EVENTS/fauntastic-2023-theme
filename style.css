@@ -109,7 +109,6 @@ Requires at least: WordPress 6.0.1
 /***************************************/
 * {
 	margin: 0;
-	padding: 0;
 	outline: none;
 	border: none;
 	box-sizing: border-box;
@@ -5502,6 +5501,14 @@ nav#main-nav > ul > li, nav#main-nav > ul > li > ul > li {
 
 #nav-wrap-menu>.flags>a {
 	float: right;
+}
+
+div#nav-wrap * {
+	padding: 0;
+}
+
+footer * {
+	padding: 0;
 }
 
 #faun-header-btn {
