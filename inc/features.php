@@ -52,7 +52,7 @@
                 return $fauntastic_registration_state;
             }
 
-            $api_endpoint = "https://dev.registration.fauntastic.eu/rest/register";
+            $api_endpoint = "https://registration.fauntastic.eu/rest/register";
             $ch = curl_init($api_endpoint);
 
             curl_setopt_array($ch, [
