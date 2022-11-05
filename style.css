@@ -5449,7 +5449,8 @@ figure.wp-block-table.is-style-stripes {
 /* -------------------------------------------------------------------------- */
 
 body {
-	background: #FFF url("assets/images/bg.jpg") no-repeat;
+	background-color: #FFF;
+	background: url("assets/images/bg-left.jpg") no-repeat, url("assets/images/bg-right.jpg") right no-repeat;
 	background-size: auto;
 }
 
