@@ -37,7 +37,7 @@
 
             <?php if(fauntastic_get_registration_state() === FauntasticRegState::OPEN): ?>
 			<div id="button-connexion">
-                <a href="#"><?= is_lang_en() ? "Register/Login" : "Inscription/Connexion" ?></a>
+                <a href="https://registration.fauntastic.eu/"><?= is_lang_en() ? "Register/Login" : "Inscription/Connexion" ?></a>
 			</div>
             <?php endif; ?>
 		</div>
