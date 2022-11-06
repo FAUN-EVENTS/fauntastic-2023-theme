@@ -773,7 +773,7 @@ header #countdown {
 
 #button-connexion{
 	background-color: #F9D401;
-	width: 285px;
+	max-width: 285px;
 	height: 96px;
 	float: right;
 	position: relative;
@@ -5571,7 +5571,7 @@ footer * {
 
 /** This trick is U-GLY-AS-FUCK BUT I have no choice since I can't upload plugin */
 .page-id-247, .page-id-18 {
-	background: #FFF url("assets/images/bg-2.jpg") no-repeat;
+	background: #FFF url("assets/images/bg-2.jpg") no-repeat 50% 0;
 }
 
 .top-title {
