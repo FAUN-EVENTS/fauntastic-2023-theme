@@ -70,8 +70,8 @@
             switch($data["_embedded"]["state"])
             {
                 case "REGISTRATION_IS_OPEN":
-                case "REGISTRATION_ACCOUNT_CREATION_ONLY":
                 case "REGISTRATION_ACCOUNT_OPEN":
+                case "REGISTRATION_ACCOUNT_CREATION_ONLY":
                     $fauntastic_registration_state = FauntasticRegState::OPEN;
                     break;
                 case "REGISTRATION_IS_OVER":
