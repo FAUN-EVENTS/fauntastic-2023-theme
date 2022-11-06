@@ -35,7 +35,7 @@
 				<a href="/fr/<?= $slug; ?>"><p>🇫🇷</p></a>
 			</div>
 
-            <?php if(fauntastic_get_registration_state() === FauntasticRegState::OPEN): ?>
+            <?php if(fauntastic_get_registration_state() && (FauntasticRegState::OPEN | FauntasticRegState::SOLD_OUT)): ?>
 			<div id="button-connexion">
                 <a href="https://registration.fauntastic.eu/"><?= is_lang_en() ? "Register/Login" : "Inscription/Connexion" ?></a>
 			</div>

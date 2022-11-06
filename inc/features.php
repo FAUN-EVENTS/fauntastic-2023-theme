@@ -1,9 +1,10 @@
 <?php
 
     abstract class FauntasticRegState {
-        const CLOSED = "REGISTRATION_CLOSED";
-        const SOON = "REGISTRATION_OPEN_SOON";
-        const OPEN = "REGISTRATION_OPEN";
+        const CLOSED = 1;
+        const SOON = 2;
+        const OPEN = 4 ;
+        const SOLD_OUT = 8;
     }
     // Set default state
     $fauntastic_registration_state = null;
@@ -71,12 +72,14 @@
             {
                 case "REGISTRATION_IS_OPEN":
                 case "REGISTRATION_ACCOUNT_OPEN":
-                case "REGISTRATION_ACCOUNT_CREATION_ONLY":
                     $fauntastic_registration_state = FauntasticRegState::OPEN;
                     break;
                 case "REGISTRATION_IS_OVER":
                 case "REGISTRATION_IS_DONE":
                     $fauntastic_registration_state = FauntasticRegState::CLOSED;
+                    break;
+                case "REGISTRATION_ACCOUNT_CREATION_ONLY":
+                    $fauntastic_registration_state = FauntasticRegState::SOLD_OUT;
                     break;
                 default:
                     $fauntastic_registration_state = FauntasticRegState::SOON;
@@ -97,6 +100,7 @@
                     $img_name = "registration_open.png";
                     break;
                 case FauntasticRegState::CLOSED:
+                case FauntasticRegState::SOLD_OUT:
                     $img_name = "registration_closed.png";
                     break;
                 default:
