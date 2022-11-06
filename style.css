@@ -789,8 +789,7 @@ header #countdown {
 	color: #000000;
 	text-transform: uppercase;
 	opacity: 1;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: auto;
 }
 
 #nav-wrap-menu > .flags {
