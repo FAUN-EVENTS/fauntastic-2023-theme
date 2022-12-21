@@ -7,7 +7,7 @@
     >
     <p style="text-transform: uppercase; text-align: center">Uhoh...</p>
     <p style="text-align: center">La page que vous avez demandé n'a pas été trouvée...</p>
-    <p style="text-align: center">Si vous êtes perdu, rendez-vous en <a href="/en">Page d'accueil</a></p>
+    <p style="text-align: center">Si vous êtes perdu, rendez-vous en <a href="/">Page d'accueil</a></p>
 </section>
 
 <?php get_footer(); ?>
