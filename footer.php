@@ -3,7 +3,7 @@
 <?php
 
 if(is_lang_en())
-    require_once "footer-en.php";
+    require_once "en/footer-en.php";
 else
-    require_once "footer-fr.php";
+    require_once "fr/footer-fr.php";
 ?>
