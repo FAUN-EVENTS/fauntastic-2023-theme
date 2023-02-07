@@ -58,7 +58,8 @@
 
             curl_setopt_array($ch, [
                 CURLOPT_HEADER => 0,
-                CURLOPT_RETURNTRANSFER => true
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_TIMEOUT => 500
             ]);
             curl_setopt($ch, CURLOPT_HEADER, 0);
 
