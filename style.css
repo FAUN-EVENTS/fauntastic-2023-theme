@@ -5612,6 +5612,91 @@ body>section li {
 	-webkit-transition: background-color .4s ease-in-out, box-shadow .4s ease-in-out;
 }
 
+.btn-group {
+	width: 100%;
+}
+.btn-group button {
+	border: 1px solid rgba(0,0,0, 0);
+	color: white;
+	padding: 10px 24px;
+	cursor: pointer;
+	float: left;
+	width: 25%;
+	height: 51px;
+	line-height: normal;
+	font-weight: bold;
+}
+
+.btn-group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.btn-group button:not(:last-child) {
+	border-right: none; /* Prevent double borders */
+}
+
+#planning-select{
+	display : inline-block;
+	height : 0;
+	width : 0;
+	border-right : 20px solid transparent;
+	border-top : 20px solid var(--rose);
+	border-left : 20px solid transparent;
+	margin-left: calc((25% - 40px) / 2);
+	transition: margin-left 0.5s, border-top-color 0.5s, display 1s;
+}
+
+.planning-tab {
+	margin-top: -25px;
+	table-layout: fixed;
+	border: none;
+	background-color: rgba(252, 252, 252, 0.53);
+	display: none;
+}
+
+.planning-tab * {
+	font-family: "Outfit", serif;
+}
+
+.planning-tab tbody {
+	display: block;
+	content: '';
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.planning-tab td, .planning-tab th {
+	border: none;
+}
+
+.planning-item {
+	width: 80%;
+}
+
+.planning-item h6 {
+	color: var(--rose);
+	font-size: 20px;
+}
+
+.planning-hour {
+	font-size: 20px;
+}
+
+.planning-hour img {
+	width: 25px;
+	vertical-align: text-top;
+}
+
+tr.bordered {
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+tr.bordered:after {
+	width: 100px;
+}
+
 .posts-w a {
 	color: var(--rose);
 }
@@ -5638,6 +5723,22 @@ body>section li {
 
 .yellow {
 	color: var(--jaune);
+}
+
+.bg-blue {
+	background-color: var(--bleu);
+}
+
+.bg-dark {
+	background-color: var(--noir);
+}
+
+.bg-rose {
+	background-color: var(--rose);
+}
+
+.bg-yellow {
+	background-color: var(--jaune);
 }
 
 .mb-0 {
